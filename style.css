@@ -1,0 +1,245 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+	font-size: 20px;
+}
+head{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+header{
+    margin-top: 10px;
+}
+
+body{
+    background: linear-gradient(to right, #0988dd, #4855bd);
+    overflow: hidden;
+}
+
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+main{
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+.input-texto{
+    width: 600px;
+    height: 55%;
+    margin: auto;
+    margin-top: 120px;
+    resize: none;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.mensaje{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 150px;
+    background-image: url("imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+    background-color: white;
+    border-radius: 10px;
+    resize: none;
+    display: block;
+}
+
+.copiar{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 205px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(15, 15, 105, 0.8);
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.copiar:hover{
+    border-color: #F9F5EB;
+    font-size: 21px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    border-radius: 10px;
+}
+
+.encriptar{
+    background-color: rgba(15, 15, 105, 0.8);
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.encriptar:hover{
+    border-color: #F9F5EB;
+    font-size: 21px;
+}
+
+.desencriptar{
+    margin-left: 30px;
+    background-color: rgba(15, 15, 105, 0.8);
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 5px 15px;
+    cursor:pointer;
+}
+
+.desencriptar:hover{
+    border-color: #F9F5EB;
+    font-size: 21px;
+}
+
+.informacion{
+    font-size: 15px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
+.copyright{
+    color: white;
+    font-size: 12px;
+}
+
+.alert{
+    width: 40%;
+    padding: 40%;
+}
+
+/*burbujas*/
+
+.burbuja{
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+    position: absolute;
+    bottom: -150;
+    
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 100px;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
